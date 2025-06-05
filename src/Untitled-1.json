@@ -1,0 +1,55 @@
+{
+  "operator": "AND",
+  "operands": [
+    {
+      "operator": "OR",
+      "operands": [
+        {
+          "assetId": "A",
+          "pointId": "1",
+          "ruleType": "equals",
+          "thresholds": {
+            "risk": 1
+          }
+        },
+        {
+          "assetId": "B",
+          "pointId": "2",
+          "ruleType": "equals",
+          "thresholds": {
+            "risk": 1
+          }
+        }
+      ]
+    },
+    {
+      "operator": "OR",
+      "operands": [
+        {
+          "assetId": "Z",
+          "pointId": "9",
+          "ruleType": "greaterThan",
+          "thresholds": {
+            "risk": 95
+          }
+        },
+        {
+          "assetId": "Y",
+          "pointId": "8",
+          "ruleType": "greaterThan",
+          "thresholds": {
+            "risk": 95
+          }
+        },
+        {
+          "assetId": "X",
+          "pointId": "7",
+          "ruleType": "greaterThan",
+          "thresholds": {
+            "risk": 95
+          }
+        }
+      ]
+    }
+  ]
+}

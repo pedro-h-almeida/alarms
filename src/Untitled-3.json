@@ -1,0 +1,75 @@
+{
+  "PK": "ASSET_ID#5030",
+  "companyId": 14,
+  "facilityId": 830,
+  "rules": [
+    {
+      "desc": "Bomba Desligada",
+      "operator": "AND",
+      "operands": [
+        {
+          "operator": "OR",
+          "operands": [
+            {
+              "assetId": "A",
+              "pointId": "1",
+              "ruleType": "equals",
+              "thresholds": {
+                "alert": 0
+              }
+            }
+          ]
+        },
+        {
+          "operator": "OR",
+          "operands": [
+            {
+              "assetId": "Z",
+              "pointId": "9",
+              "ruleType": "lessThan",
+              "thresholds": {
+                "alert": 90,
+                "risk": 70
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "desc": "Bomba Ligada",
+      "operator": "AND",
+      "operands": [
+        {
+          "operator": "OR",
+          "operands": [
+            {
+              "assetId": "A",
+              "pointId": "1",
+              "ruleType": "equals",
+              "thresholds": {
+                "alert": 1
+              }
+            }
+          ]
+        },
+        {
+          "operator": "OR",
+          "operands": [
+            {
+              "assetId": "Z",
+              "pointId": "9",
+              "ruleType": "greaterThan",
+              "thresholds": {
+                "alert": 95,
+                "risk": 100
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "createdAt": "2025-06-05T12:00:00Z",
+  "deletedAt": null
+}

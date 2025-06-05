@@ -1,0 +1,66 @@
+{
+  "alarms": [
+    {
+      "operator": "AND",
+      "operands": [
+        {
+          "operator": "OR",
+          "operands": [
+            {
+              "assetId": "A",
+              "pointId": "1",
+              "ruleType": "equals",
+              "thresholds": {
+                "risk": 0
+              }
+            }
+          ]
+        },
+        {
+          "operator": "OR",
+          "operands": [
+            {
+              "assetId": "Z",
+              "pointId": "9",
+              "ruleType": "lessThan",
+              "thresholds": {
+                "risk": 90
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "operator": "AND",
+      "operands": [
+        {
+          "operator": "OR",
+          "operands": [
+            {
+              "assetId": "A",
+              "pointId": "1",
+              "ruleType": "equals",
+              "thresholds": {
+                "risk": 1
+              }
+            }
+          ]
+        },
+        {
+          "operator": "OR",
+          "operands": [
+            {
+              "assetId": "Z",
+              "pointId": "9",
+              "ruleType": "greaterThan",
+              "thresholds": {
+                "risk": 95
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
